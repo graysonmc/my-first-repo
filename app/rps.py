@@ -22,26 +22,28 @@ print("COMP:", computer_choice)
 
 # DETERMINE THE WINNER
 
-# quick alias to facilitate some copy and pasting
-# we will soon move this into a function anyway
-u = user_choice
-c = computer_choice
 
-if u == "rock" and c == "rock":
-    print("TIE GAME")
-elif u == "rock" and c == "paper":
-    print("COMPUTER WINS")
-elif u == "rock" and c == "scissors":
-    print("USER WINS")
-elif u == "paper" and c == "rock":
-    print("COMPUTER WINS") # OOPS
-elif u == "paper" and c == "paper":
-    print("TIE GAME")
-elif u == "paper" and c == "scissors":
-    print("USER WINS") # OOPS
-elif u == "scissors" and c == "rock":
-    print("COMPUTER WINS")
-elif u == "scissors" and c == "paper":
-    print("USER WINS")
-elif u == "scissors" and c == "scissors":
-    print("TIE GAME")
+def determine_winner(u, c):
+    if u == "rock" and c == "rock":
+        return "TIE GAME"
+    elif u == "rock" and c == "paper":
+        return "COMPUTER WINS"
+    elif u == "rock" and c == "scissors":
+        return "USER WINS"
+    elif u == "paper" and c == "rock":
+        return "COMPUTER WINS" # OOPS
+    elif u == "paper" and c == "paper":
+        return "TIE GAME"
+    elif u == "paper" and c == "scissors":
+        return "USER WINS" # OOPS
+    elif u == "scissors" and c == "rock":
+        return "COMPUTER WINS"
+    elif u == "scissors" and c == "paper":
+        return "USER WINS"
+    elif u == "scissors" and c == "scissors":
+        return "TIE GAME"
+
+result = determine_winner(user_choice, computer_choice)
+print(result)
+
+# assert determine_winner("rock", "rock") == "TIE GAME"
