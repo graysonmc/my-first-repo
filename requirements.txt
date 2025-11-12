@@ -1,0 +1,7 @@
+# for stocks:
+pandas
+python-dotenv
+plotly
+
+# for testing:
+pytest

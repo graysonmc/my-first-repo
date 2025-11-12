@@ -1,0 +1,7 @@
+# ignore clutter files:
+__pycache__
+.pytest_cache
+.DS_Store
+
+# ignore secret credentials:
+.env
