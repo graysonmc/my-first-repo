@@ -1,7 +1,13 @@
-# for stocks:
-pandas
 python-dotenv
+pandas
+requests
 plotly
+sendgrid==6.6.0
+
+# for web app:
+flask
 
 # for testing:
 pytest
+
+#gunicorn
