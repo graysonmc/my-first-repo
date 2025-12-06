@@ -9,6 +9,10 @@ load_dotenv() # loads environment variables from the ".env" file
 ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
 
 
+def format_usd(price):
+    return f"${price:.2f}"
+
+
 def fetch_stocks_csv(symbol="NFLX"):
     """Fetches stock data from the AlphaVantage API.
 

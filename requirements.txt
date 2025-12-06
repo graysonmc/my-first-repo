@@ -1,13 +1,15 @@
-python-dotenv
-pandas
-requests
-plotly
-sendgrid==6.6.0
+# this is the "requirements.txt" file...
 
-# for web app:
+# stocks:
+pandas
+python-dotenv
+plotly
+
+# web app:
 flask
 
-# for testing:
+# testing:
 pytest
 
-#gunicorn
+# production server:
+gunicorn
